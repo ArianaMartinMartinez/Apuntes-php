@@ -12,7 +12,7 @@ class Database {
     public function __construct() {
         try {
             $this->mysql = $this->getCOnnection();
-        } catch(PDOExeption $e) {
+        } catch(PDOException $e) {
             echo "Conexión BBDD fallida: ". $e->getMessage();
         }
     }
