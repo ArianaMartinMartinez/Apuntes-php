@@ -7,6 +7,14 @@
     ?>
 
     <main>
+        <h1>Call problems</h1>
+
+        <div>
+            <a href="?action=create">
+                <button type="button" class="btn btn-success">Add problem</button>
+            </a>
+        </div>
+
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -29,7 +37,7 @@
                                 <td>{$call->id}</td>
                                 <td>
                                     <a href='?action=delete&id={$call->id}'>
-                                        <button type='button' class='btn btn-danger'>Eliminar</button>
+                                        <button type='button' class='btn btn-danger'>Delete</button>
                                     </a>
                                 </td>
                             </tr>

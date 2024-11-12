@@ -49,4 +49,8 @@ class Call {
     public function destroy() {
         $query = $this->database->mysql->query("DELETE FROM {$this->table} WHERE id={$this->id}");
     }
+
+    public function save() {
+        $query = $this->database->mysql->query("INSERT INTO {$this->table} (room, issue, dateTime) VALUES ('{$this->room}', '{$this->issue}', '{$this->dateTime}')");
+    }
 }
