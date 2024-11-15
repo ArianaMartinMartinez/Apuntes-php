@@ -39,6 +39,9 @@
                                     <a href='?action=delete&id={$call->id}'>
                                         <button type='button' class='btn btn-danger'>Delete</button>
                                     </a>
+                                    <a href='?action=edit&id={$call->id}'>
+                                        <button type='button' class='btn btn-info'>Edit</button>
+                                    </a>
                                 </td>
                             </tr>
                         ";

@@ -53,4 +53,15 @@ class Call {
     public function save() {
         $query = $this->database->mysql->query("INSERT INTO {$this->table} (room, issue, dateTime) VALUES ('{$this->room}', '{$this->issue}', '{$this->dateTime}')");
     }
+
+    
+    public function rename($roomUpdate, $issueUpdate, $dateTimeUpdate) {
+        $this->room = $roomUpdate;
+        $this->issue = $issueUpdate;
+        $this->dateTime = $dateTimeUpdate;
+    }
+    
+    public function update() {
+        $query = $this->database->mysql->query("UPDATE {$this->table} SET room='{$this->room}', issue='{$this->issue}', dateTime='{$this->dateTime}' WHERE id={$this->id}");
+    }
 }
