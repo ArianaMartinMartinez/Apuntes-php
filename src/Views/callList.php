@@ -31,15 +31,15 @@
 
                         echo "
                             <tr>
-                                <td>{$call->dateTime}</td>
-                                <td>{$call->room}</td>
-                                <td>{$call->issue}</td>
-                                <td>{$call->id}</td>
+                                <td>{$call->getDateTime()}</td>
+                                <td>{$call->getRoom()}</td>
+                                <td>{$call->getIssue()}</td>
+                                <td>{$call->getId()}</td>
                                 <td>
-                                    <a href='?action=delete&id={$call->id}'>
+                                    <a href='?action=delete&id={$call->getId()}'>
                                         <button type='button' class='btn btn-danger'>Delete</button>
                                     </a>
-                                    <a href='?action=edit&id={$call->id}'>
+                                    <a href='?action=edit&id={$call->getId()}'>
                                         <button type='button' class='btn btn-info'>Edit</button>
                                     </a>
                                 </td>

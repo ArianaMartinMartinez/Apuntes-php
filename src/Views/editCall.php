@@ -14,20 +14,20 @@
             <button type="button" id="button-cancel" class="btn btn-outline-danger button-cancel">Cancel</button>
         </a>
 
-        <form class="justify-content-center" action='?action=update&id=<?php echo "{$data["call"]->id}" ?>' method="post">
+        <form class="justify-content-center" action='?action=update&id=<?php echo "{$data["call"]->getId()}" ?>' method="post">
             <div class="input-group" style="margin-bottom: 2rem; width: 90%; margin-left: 5%">
                 <span class="input-group-text">Issue Room</span>
-                <input type="text" name="room" required placeholder="Write here the room" value="<?php echo "{$data["call"]->room}" ?>">
+                <input type="text" name="room" required placeholder="Write here the room" value="<?php echo "{$data["call"]->getRoom()}" ?>">
             </div>
 
             <div class="input-group" style="margin-bottom: 2rem; width: 90%; margin-left: 5%">
                 <span class="input-group-text">Issue description</span>
-                <textarea class="form-control" area-label="Width textarea" type="text" name="issue" required placeholder="Issue description"><?php echo "{$data["call"]->issue}" ?></textarea>
+                <textarea class="form-control" area-label="Width textarea" type="text" name="issue" required placeholder="Issue description"><?php echo "{$data["call"]->getIssue()}" ?></textarea>
             </div>
 
             <div class="input-group" style="margin-bottom: 2rem; width: 90%; margin-left: 5%">
                 <span class="input-group-text">Issue Date</span>
-                <input type="date" name="dateTime" required value="<?php echo "{$data["call"]->dateTime}" ?>">
+                <input type="date" name="dateTime" required value="<?php echo "{$data["call"]->getDateTime()}" ?>">
             </div>
 
             <div class="botones" style="margin-bottom: 2rem;">

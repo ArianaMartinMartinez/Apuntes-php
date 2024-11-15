@@ -16,7 +16,7 @@ class CallTest extends TestCase {
         $newCall = new Call(null, "112", "Comment for test 1", null);
 
         //when - el rodaje de la película
-        $resultGetRoom = $newCall->room;
+        $resultGetRoom = $newCall->getRoom();
 
         //then - críticas de la película
         $this->assertEquals("112", $resultGetRoom);
@@ -27,7 +27,7 @@ class CallTest extends TestCase {
         $newCall = new Call(null, "112", "Comment for test 2", null);
 
         //when - el rodaje de la película
-        $resultGetIssue = $newCall->issue;
+        $resultGetIssue = $newCall->getIssue();
 
         //then - críticas de la película
         $this->assertEquals("Comment for test 2", $resultGetIssue);
